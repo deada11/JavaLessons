@@ -1,4 +1,4 @@
-package javaRushCourse;
+package javaRushCourse.arrays;
 
 
 import java.util.Arrays;
@@ -12,8 +12,8 @@ public class arraysTask1 {
     public static void main(String[] args) {
         resultArray = Arrays.copyOf(firstArray, firstArray.length + secondArray.length);
         System.arraycopy(secondArray, 0, resultArray, firstArray.length, secondArray.length);
-        for (int i = 0; i < resultArray.length; i++) {
-            System.out.print(resultArray[i] + ", ");
+        for (int j : resultArray) {
+            System.out.print(j + ", ");
         }
     }
 }
