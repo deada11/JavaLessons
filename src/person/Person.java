@@ -4,13 +4,18 @@ public class Person {
     String fullName = "Tester";
     int age = 44;
 
-    Person(String fullName, int age) {
+    public Person(String fullName, int age) {
         this.fullName = fullName;
         this.age = age;
     }
 
-    Person() {
+    public Person() {
 
+    }
+
+    @Override
+    public String toString() {
+        return "fullName='" + fullName + '\'' +", age=" + age;
     }
 
     void move() {
