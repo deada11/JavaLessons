@@ -1,7 +1,7 @@
 package vetclinic;
 
 public class Horse extends Animal {
-    private int age;
+    private String age;
 
     public Horse(){
 
@@ -10,11 +10,11 @@ public class Horse extends Animal {
         super(food, location);
     }
 
-    public int getAge() {
+    public String getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    public void setAge(String age) {
         this.age = age;
     }
 
@@ -31,8 +31,8 @@ public class Horse extends Animal {
     @Override
     public String toString() {
         return "Horse { " +
-                "age = " + getAge() +
-                "food = " + getFood() +
+                "age = " + getAge()  + " " +
+                "food = " + getFood() + " " +
                 "location = " + getLocation() +
                 '}';
     }

@@ -31,8 +31,8 @@ public class Cat extends Animal {
     @Override
     public String toString() {
         return "Cat { " +
-                "name = " + getName()  +
-                "food = " + getFood()  +
+                "name = " + getName() + " " +
+                "food = " + getFood() + " " +
                 "location = " + getLocation() +
                 '}';
     }
